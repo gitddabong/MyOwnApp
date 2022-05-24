@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         val pipBtn = findViewById<Button>(R.id.pipBtn) as Button
         pipBtn.setOnClickListener(View.OnClickListener {
             val timerIntent = Intent(this, TimerActivity::class.java)
+//            timerIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(timerIntent)
         })
     }

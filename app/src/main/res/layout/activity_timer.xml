@@ -7,17 +7,44 @@
     tools:context=".TimerActivity"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="어서오세요호"
-        android:id="@+id/textView1"
-        android:layout_gravity="center"/>
-
 <!--    <VideoView-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->
 <!--        android:id="@+id/main_video"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTime"
+        android:text="00:00"
+        android:textSize="50dp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/startBtn"
+            android:text="시작" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/stopBtn"
+            android:text="일시 정지"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resetTimer"
+            android:text="초기화" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
     <Button
         android:layout_width="wrap_content"
@@ -26,11 +53,5 @@
         android:layout_gravity="center"
         android:text="PiP 활성"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/startBtn"
-        android:text="타이머 시작"
-        android:layout_gravity="center"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
