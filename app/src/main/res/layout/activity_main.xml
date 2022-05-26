@@ -17,7 +17,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_gravity="center"
-        android:layout_margin="30dp"/>
+        android:layout_margin="50dp"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -26,5 +26,15 @@
         android:textSize="25dp"
         android:id="@+id/pipBtn"
         android:layout_gravity="center"
-        android:layout_margin="30dp"/>
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. 문자 자동 발신"
+        android:textSize="25dp"
+        android:id="@+id/confBtn"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+
 </androidx.appcompat.widget.LinearLayoutCompat>

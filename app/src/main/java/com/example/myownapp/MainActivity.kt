@@ -17,5 +17,11 @@ class MainActivity : AppCompatActivity() {
 //            timerIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(timerIntent)
         })
+
+        val confBtn = findViewById<Button>(R.id.confBtn) as Button
+        confBtn.setOnClickListener(View.OnClickListener {
+            val confIntent = Intent(this, )
+
+        })
     }
 }

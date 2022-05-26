@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
         <activity
-            android:name=".TimerActivity"
-            android:supportsPictureInPicture="true"
-            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:name=".ConfActivity"
             android:exported="false" />
+        <activity
+            android:name=".TimerActivity"
+            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+            android:exported="false"
+            android:supportsPictureInPicture="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
