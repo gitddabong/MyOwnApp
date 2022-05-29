@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
 
         val confBtn = findViewById<Button>(R.id.confBtn) as Button
         confBtn.setOnClickListener(View.OnClickListener {
-            val confIntent = Intent(this, )
-
+            val confIntent = Intent(this, ConfActivity::class.java)
+            startActivity(confIntent)
         })
     }
 }

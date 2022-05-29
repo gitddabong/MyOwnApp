@@ -12,6 +12,11 @@
         <activity
             android:name=".ConfActivity"
             android:exported="false" />
+        <receiver android:name=".ConfActivity"  android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_ANSWER"/>
+            </intent-filter>
+        </receiver>
         <activity
             android:name=".TimerActivity"
             android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
