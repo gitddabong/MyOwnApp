@@ -1,29 +1,17 @@
 package com.example.myownapp
 
-import android.annotation.SuppressLint
-import android.content.Context
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.telephony.PhoneStateListener
-import android.telephony.TelephonyCallback
+import com.example.myownapp.R
 import android.telephony.TelephonyManager
+import android.telephony.PhoneStateListener
 import android.util.Log
 
-class ConfActivity : AppCompatActivity() {
+class MainActivity2 : AppCompatActivity() {
+    var TAG = "confActivity"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_conf)
-
-        var TAG = "call test"
-
-//        val telephonyManager : TelephonyManager = getSystemService(TELEPHONY_SERVICE) as TelephonyManager
-//        val telephonyCallback : TelephonyCallback = getSystemService(TELE) as TelephonyCallback
-//        telephonyManager.registerTelephonyCallback(mainExecutor,telephonyCallback
-//
-//
-//        )
-        Log.d(TAG, "시작!")
+        setContentView(R.layout.activity_main2)
 
         val telephonyManager = getSystemService(TELEPHONY_SERVICE) as TelephonyManager
         telephonyManager.listen(object : PhoneStateListener() {
